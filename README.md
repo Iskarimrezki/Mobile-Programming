@@ -1,2 +1,4 @@
 # Mobile-Programming
-A Repository for Mobile Programming Course at Computer Science University of Indonesia
+### A Repository for Mobile Programming Course at Computer Science University of Indonesia
+
+``testing some function
