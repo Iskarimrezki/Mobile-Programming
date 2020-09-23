@@ -8,5 +8,5 @@ Here's some Task while doing this lab :
 - [x] Learning about Instrument Test
 - [x] Learn about Layout xml and Create a Function
 - [ ] Write Unit Test
-- [ ] Write Instrument Test
+- [ ] Write Instrumentation Test
 - [ ] Build APK
