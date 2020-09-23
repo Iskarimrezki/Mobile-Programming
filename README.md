@@ -4,6 +4,6 @@
 In this Lab I learn to create an android project for the first time with android studio.
 
 This Lab Goals :
-- [x] Instalasi Android Development Toolkit
-- [x] Membuat aplikasi Hello World
+- [x] Install Android Development Toolkit
+- [x] Create Hello World App
 
