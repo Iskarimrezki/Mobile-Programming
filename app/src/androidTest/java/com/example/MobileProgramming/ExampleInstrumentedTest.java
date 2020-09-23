@@ -2,12 +2,15 @@ package com.example.MobileProgramming;
 
 import android.content.Context;
 
+import androidx.test.filters.LargeTest;
 import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
+import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
+import static androidx.test.espresso.action.ViewActions.click;
 import static org.junit.Assert.*;
 
 /**
@@ -24,3 +27,4 @@ public class ExampleInstrumentedTest {
         assertEquals("com.example.MobileProgramming", appContext.getPackageName());
     }
 }
+
