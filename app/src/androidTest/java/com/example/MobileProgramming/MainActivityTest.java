@@ -5,6 +5,8 @@ import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,14 +23,19 @@ public class MainActivityTest {
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
 
+    @Before
+    public void setUp() throws Exception {
+    }
+
     @Test
-    public void mainActivityTest() {
-        Thread.sleep(500)
-        onView(withId(R.id.incrementBtn))
-                .perform(click())
-        Thread.sleep(500)
-        onView(withId(R.id.decrementBtn))
-                .perform(click())
-        Thread.sleep(500)
+    public void mainActivityTestRule() {
+        onView(withId(R.id.incrementBtn)).perform(click());
+        onView(withId(R.id.decrementBtn)).perform(click());
+    }
+
+    @After
+    public void tearDown() throws Exception {
     }
 }
+
+

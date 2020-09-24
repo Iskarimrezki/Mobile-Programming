@@ -9,11 +9,10 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int count = 0;
+    static int count = 0;
     private TextView numberText;
     private Button increment;
     private Button decrement;
-    private int counter;
 
     private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
@@ -44,18 +43,17 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void initCounter(){
-        counter = 0;
-        numberText.setText(counter);
+    public static int getCounter() {
+        return count;
     }
 
 
-    public void increment (){
+    public void increment(){
         count++;
         numberText.setText(count + "");
     }
 
-    public void decrement () {
+    public void decrement() {
         if (count <= 0) count = 0;
         else
             count--;
