@@ -7,6 +7,6 @@ Here's some Task while doing this lab :
 - [x] Learning about Unit Test
 - [x] Learning about Instrument Test
 - [x] Learn about Layout xml and Create a Function
-- [ ] Write Unit Test
-- [ ] Write Instrumentation Test
-- [ ] Build APK
+- [x] Write Unit Test
+- [x] Write Instrumentation Test
+- [x] Build APK
