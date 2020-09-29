@@ -20,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         play.setOnClickListener {
             stopwatchStart()
         }
+
+        pause.setOnClickListener {
+            stopwatchPause()
+        }
     }
 
     fun stopwatchStart(){
@@ -50,4 +54,13 @@ class MainActivity : AppCompatActivity() {
         }
         handler.post(runnable)
     }
+
+    fun stopwatchPause(){
+        stopwatchOn=false
+        play.show()
+        pause.hide()
+        handler.removeCallbacks(runnable)
+    }
+
+
 }
