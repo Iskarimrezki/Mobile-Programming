@@ -24,6 +24,10 @@ class MainActivity : AppCompatActivity() {
         pause.setOnClickListener {
             stopwatchPause()
         }
+
+        reset.setOnClickListener {
+            stopwatchReset()
+        }
     }
 
     fun stopwatchStart(){
@@ -61,6 +65,20 @@ class MainActivity : AppCompatActivity() {
         pause.hide()
         handler.removeCallbacks(runnable)
     }
+
+    fun stopwatchReset(){
+        stopwatchOn=false
+        play.show()
+        pause.hide()
+        handler.removeCallbacks(runnable)
+        msecond = 0
+        second = 0
+        minute = 0
+        stopwatch_milisecond.text=msecond.toString()
+        stopwatch_second.text=second.toString()
+        stopwatch_minute.text=minute.toString()
+    }
+
 
 
 }
