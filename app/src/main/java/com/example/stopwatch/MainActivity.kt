@@ -3,7 +3,10 @@ package com.example.stopwatch
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.view.View
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlin.system.exitProcess
 
 class MainActivity : AppCompatActivity() {
     var handler: Handler = Handler()
@@ -27,6 +30,10 @@ class MainActivity : AppCompatActivity() {
 
         reset.setOnClickListener {
             stopwatchReset()
+        }
+
+        exitBtn.setOnClickListener {
+            stopwatchExit()
         }
     }
 
@@ -86,4 +93,17 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-}
+    fun stopwatchExit(){
+        exitProcess(-1)
+    }
+
+    override fun onBackPressed() {
+        val toast = Toast.makeText(
+            applicationContext,
+            "Please exit app via exit button:)",
+            Toast.LENGTH_SHORT
+            )
+            toast.show()
+        }
+    }
+
