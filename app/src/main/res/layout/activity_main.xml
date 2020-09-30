@@ -125,6 +125,7 @@
         android:id="@+id/exitBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="25dp"
         android:background="#E91E63"
         android:text="EXIT"
         android:textColor="#FFFFFF" />
