@@ -79,6 +79,11 @@ class MainActivity : AppCompatActivity() {
         stopwatch_minute.text=minute.toString()
     }
 
-
+    override fun onPause() {
+        super.onPause()
+        if (stopwatchOn){
+            super.onResume()
+        }
+    }
 
 }
