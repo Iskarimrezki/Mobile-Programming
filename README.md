@@ -1,6 +1,8 @@
-# flutter_splashscreen
+# Lab 7 Mobile Programming
 
-A new Flutter application.
+### Flutter Splash Screen
+
+In this current lab, I try to make a simple custom splash screen
 
 ## Getting Started
 
